@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('movieworld.urls')),
     path('', include('accounts.urls')),
+    path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
 ]
